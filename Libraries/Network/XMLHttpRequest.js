@@ -128,7 +128,7 @@ class XMLHttpRequest extends EventTarget(...XHR_EVENTS) {
   readyState: number = UNSENT;
   responseHeaders: ?Object;
   status: number = 0;
-  timeout: number = 30 * 1000;
+  timeout: number = 45 * 1000;
   responseURL: ?string;
   withCredentials: boolean = true
 
