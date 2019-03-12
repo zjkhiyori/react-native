@@ -29,6 +29,7 @@ const minimist = require('minimist');
 const path = require('path');
 
 import type {CommandT} from '../commands';
+/* $FlowFixMe(site=react_native_oss) */
 import type {ConfigT} from 'metro-config/src/configTypes.flow';
 
 export type RNConfig = {
@@ -131,12 +132,16 @@ async function getCliConfig(): Promise<RNConfig> {
     cliArgs.config != null ? path.resolve(__dirname, cliArgs.config) : null,
   );
 
+  // $FlowFixMe Metro configuration is immutable.
   config.transformer.assetRegistryPath = ASSET_REGISTRY_PATH;
+  // $FlowFixMe Metro configuration is immutable.
   config.resolver.hasteImplModulePath =
     config.resolver.hasteImplModulePath || defaultConfig.hasteImplModulePath;
+  // $FlowFixMe Metro configuration is immutable.
   config.resolver.platforms = config.resolver.platforms
     ? config.resolver.platforms.concat(defaultConfig.getPlatforms())
     : defaultConfig.getPlatforms();
+  // $FlowFixMe Metro configuration is immutable.
   config.resolver.providesModuleNodeModules = config.resolver
     .providesModuleNodeModules
     ? config.resolver.providesModuleNodeModules.concat(
@@ -152,7 +157,13 @@ async function getCliConfig(): Promise<RNConfig> {
  */
 function getProjectCommands(): Array<CommandT> {
   const commands = plugins.commands.map(pathToCommands => {
-    const name = pathToCommands.split(path.sep)[0];
+    const name =
+      pathToCommands[0] === '@'
+        ? pathToCommands
+            .split(path.sep)
+            .slice(0, 2)
+            .join(path.sep)
+        : pathToCommands.split(path.sep)[0];
 
     return attachPackage(
       require(path.join(appRoot, 'node_modules', pathToCommands)),

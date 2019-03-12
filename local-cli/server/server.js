@@ -13,6 +13,7 @@
 const runServer = require('./runServer');
 
 import type {RNConfig} from '../core';
+/* $FlowFixMe(site=react_native_oss) */
 import type {ConfigT} from 'metro-config/src/configTypes.flow';
 import type {Args as RunServerArgs} from './runServer';
 
@@ -32,8 +33,8 @@ module.exports = {
   options: [
     {
       command: '--port [number]',
-      default: process.env.RCT_METRO_PORT || 8081,
       parse: (val: string) => Number(val),
+      default: (config: ConfigT) => config.server.port,
     },
     {
       command: '--host [string]',
@@ -42,18 +43,14 @@ module.exports = {
     {
       command: '--projectRoot [string]',
       description: 'Specify the main project root',
-      default: (config: ConfigT) => {
-        return config.projectRoot;
-      },
+      default: (config: ConfigT) => config.projectRoot,
     },
     {
       command: '--watchFolders [list]',
       description:
         'Specify any additional folders to be added to the watch list',
       parse: (val: string) => val.split(','),
-      default: (config: ConfigT) => {
-        return config.watchFolders;
-      },
+      default: (config: ConfigT) => config.watchFolders,
     },
     {
       command: '--assetExts [list]',
@@ -81,11 +78,7 @@ module.exports = {
       description:
         'Specify any npm packages that import dependencies with providesModule',
       parse: (val: string) => val.split(','),
-      default: (config: RNConfig) => {
-        return config.resolver
-          ? config.resolver.providesModuleNodeModules
-          : undefined;
-      },
+      default: (config: ConfigT) => config.resolver.providesModuleNodeModules,
     },
     {
       command: '--max-workers [number]',
@@ -93,6 +86,7 @@ module.exports = {
         'Specifies the maximum number of workers the worker-pool ' +
         'will spawn for transforming files. This defaults to the number of the ' +
         'cores available on your machine.',
+      default: (config: ConfigT) => config.maxWorkers,
       parse: (workers: string) => Number(workers),
     },
     {

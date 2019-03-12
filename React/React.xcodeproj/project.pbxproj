@@ -957,6 +957,10 @@
 		3DFE0D1B1DF8575800459392 /* YGMacros.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 130A77041DF767AF001F9587 /* YGMacros.h */; };
 		3DFE0D1C1DF8575800459392 /* Yoga.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 130A77081DF767AF001F9587 /* Yoga.h */; };
 		3EDCA8A51D3591E700450C31 /* RCTErrorInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EDCA8A41D3591E700450C31 /* RCTErrorInfo.m */; };
+		50E98FEA21460B0D00CD9289 /* RCTWKWebViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E98FE621460B0D00CD9289 /* RCTWKWebViewManager.m */; };
+		50E98FEB21460B0D00CD9289 /* RCTWKWebView.h in Headers */ = {isa = PBXBuildFile; fileRef = 50E98FE721460B0D00CD9289 /* RCTWKWebView.h */; };
+		50E98FEC21460B0D00CD9289 /* RCTWKWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E98FE821460B0D00CD9289 /* RCTWKWebView.m */; };
+		50E98FED21460B0D00CD9289 /* RCTWKWebViewManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 50E98FE921460B0D00CD9289 /* RCTWKWebViewManager.h */; };
 		5335D5411FE81A4700883D58 /* RCTShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5335D5401FE81A4700883D58 /* RCTShadowView.m */; };
 		53438962203905BB008E0CB3 /* YGLayout.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5343895E203905B6008E0CB3 /* YGLayout.cpp */; };
 		53438963203905BC008E0CB3 /* YGLayout.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5343895E203905B6008E0CB3 /* YGLayout.cpp */; };
@@ -1920,58 +1924,58 @@
 		137327E61AA5CF210034F82E /* RCTTabBarManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTTabBarManager.m; sourceTree = "<group>"; };
 		1384E2061E806D4E00545659 /* RCTNativeModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTNativeModule.h; sourceTree = "<group>"; };
 		1384E2071E806D4E00545659 /* RCTNativeModule.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RCTNativeModule.mm; sourceTree = "<group>"; };
-		139D7E391E25C5A300323FB7 /* bignum-dtoa.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "bignum-dtoa.cc"; path = "src/bignum-dtoa.cc"; sourceTree = "<group>"; };
-		139D7E3A1E25C5A300323FB7 /* bignum-dtoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "bignum-dtoa.h"; path = "src/bignum-dtoa.h"; sourceTree = "<group>"; };
-		139D7E3B1E25C5A300323FB7 /* bignum.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = bignum.cc; path = src/bignum.cc; sourceTree = "<group>"; };
-		139D7E3C1E25C5A300323FB7 /* bignum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bignum.h; path = src/bignum.h; sourceTree = "<group>"; };
-		139D7E3D1E25C5A300323FB7 /* cached-powers.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "cached-powers.cc"; path = "src/cached-powers.cc"; sourceTree = "<group>"; };
-		139D7E3E1E25C5A300323FB7 /* cached-powers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "cached-powers.h"; path = "src/cached-powers.h"; sourceTree = "<group>"; };
-		139D7E3F1E25C5A300323FB7 /* diy-fp.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "diy-fp.cc"; path = "src/diy-fp.cc"; sourceTree = "<group>"; };
-		139D7E401E25C5A300323FB7 /* diy-fp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "diy-fp.h"; path = "src/diy-fp.h"; sourceTree = "<group>"; };
-		139D7E411E25C5A300323FB7 /* double-conversion.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "double-conversion.cc"; path = "src/double-conversion.cc"; sourceTree = "<group>"; };
-		139D7E421E25C5A300323FB7 /* double-conversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "double-conversion.h"; path = "src/double-conversion.h"; sourceTree = "<group>"; };
-		139D7E431E25C5A300323FB7 /* fast-dtoa.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "fast-dtoa.cc"; path = "src/fast-dtoa.cc"; sourceTree = "<group>"; };
-		139D7E441E25C5A300323FB7 /* fast-dtoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "fast-dtoa.h"; path = "src/fast-dtoa.h"; sourceTree = "<group>"; };
-		139D7E451E25C5A300323FB7 /* fixed-dtoa.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "fixed-dtoa.cc"; path = "src/fixed-dtoa.cc"; sourceTree = "<group>"; };
-		139D7E461E25C5A300323FB7 /* fixed-dtoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "fixed-dtoa.h"; path = "src/fixed-dtoa.h"; sourceTree = "<group>"; };
-		139D7E471E25C5A300323FB7 /* ieee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ieee.h; path = src/ieee.h; sourceTree = "<group>"; };
-		139D7E481E25C5A300323FB7 /* strtod.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = strtod.cc; path = src/strtod.cc; sourceTree = "<group>"; };
-		139D7E491E25C5A300323FB7 /* strtod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = strtod.h; path = src/strtod.h; sourceTree = "<group>"; };
-		139D7E4A1E25C5A300323FB7 /* utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = utils.h; path = src/utils.h; sourceTree = "<group>"; };
+		139D7E391E25C5A300323FB7 /* bignum-dtoa.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "bignum-dtoa.cc"; path = "../third-party/double-conversion-1.1.6/src/bignum-dtoa.cc"; sourceTree = SOURCE_ROOT; };
+		139D7E3A1E25C5A300323FB7 /* bignum-dtoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "bignum-dtoa.h"; path = "../third-party/double-conversion-1.1.6/src/bignum-dtoa.h"; sourceTree = SOURCE_ROOT; };
+		139D7E3B1E25C5A300323FB7 /* bignum.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = bignum.cc; path = "../third-party/double-conversion-1.1.6/src/bignum.cc"; sourceTree = SOURCE_ROOT; };
+		139D7E3C1E25C5A300323FB7 /* bignum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bignum.h; path = "../third-party/double-conversion-1.1.6/src/bignum.h"; sourceTree = SOURCE_ROOT; };
+		139D7E3D1E25C5A300323FB7 /* cached-powers.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "cached-powers.cc"; path = "../third-party/double-conversion-1.1.6/src/cached-powers.cc"; sourceTree = SOURCE_ROOT; };
+		139D7E3E1E25C5A300323FB7 /* cached-powers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "cached-powers.h"; path = "../third-party/double-conversion-1.1.6/src/cached-powers.h"; sourceTree = SOURCE_ROOT; };
+		139D7E3F1E25C5A300323FB7 /* diy-fp.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "diy-fp.cc"; path = "../third-party/double-conversion-1.1.6/src/diy-fp.cc"; sourceTree = SOURCE_ROOT; };
+		139D7E401E25C5A300323FB7 /* diy-fp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "diy-fp.h"; path = "../third-party/double-conversion-1.1.6/src/diy-fp.h"; sourceTree = SOURCE_ROOT; };
+		139D7E411E25C5A300323FB7 /* double-conversion.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "double-conversion.cc"; path = "../third-party/double-conversion-1.1.6/src/double-conversion.cc"; sourceTree = SOURCE_ROOT; };
+		139D7E421E25C5A300323FB7 /* double-conversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "double-conversion.h"; path = "../third-party/double-conversion-1.1.6/src/double-conversion.h"; sourceTree = SOURCE_ROOT; };
+		139D7E431E25C5A300323FB7 /* fast-dtoa.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "fast-dtoa.cc"; path = "../third-party/double-conversion-1.1.6/src/fast-dtoa.cc"; sourceTree = SOURCE_ROOT; };
+		139D7E441E25C5A300323FB7 /* fast-dtoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "fast-dtoa.h"; path = "../third-party/double-conversion-1.1.6/src/fast-dtoa.h"; sourceTree = SOURCE_ROOT; };
+		139D7E451E25C5A300323FB7 /* fixed-dtoa.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "fixed-dtoa.cc"; path = "../third-party/double-conversion-1.1.6/src/fixed-dtoa.cc"; sourceTree = SOURCE_ROOT; };
+		139D7E461E25C5A300323FB7 /* fixed-dtoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "fixed-dtoa.h"; path = "../third-party/double-conversion-1.1.6/src/fixed-dtoa.h"; sourceTree = SOURCE_ROOT; };
+		139D7E471E25C5A300323FB7 /* ieee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ieee.h; path = "../third-party/double-conversion-1.1.6/src/ieee.h"; sourceTree = SOURCE_ROOT; };
+		139D7E481E25C5A300323FB7 /* strtod.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = strtod.cc; path = "../third-party/double-conversion-1.1.6/src/strtod.cc"; sourceTree = SOURCE_ROOT; };
+		139D7E491E25C5A300323FB7 /* strtod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = strtod.h; path = "../third-party/double-conversion-1.1.6/src/strtod.h"; sourceTree = SOURCE_ROOT; };
+		139D7E4A1E25C5A300323FB7 /* utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = utils.h; path = "../third-party/double-conversion-1.1.6/src/utils.h"; sourceTree = SOURCE_ROOT; };
 		139D7E881E25C6D100323FB7 /* libdouble-conversion.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libdouble-conversion.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		139D7ECE1E25DB7D00323FB7 /* libthird-party.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libthird-party.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		139D7ED81E25DBDC00323FB7 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = "../third-party/glog-0.3.5/src/config.h"; sourceTree = "<group>"; };
-		139D7ED91E25DBDC00323FB7 /* demangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = demangle.h; path = "../third-party/glog-0.3.5/src/demangle.h"; sourceTree = "<group>"; };
-		139D7EDA1E25DBDC00323FB7 /* logging.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = logging.cc; path = "../third-party/glog-0.3.5/src/logging.cc"; sourceTree = "<group>"; };
-		139D7EDB1E25DBDC00323FB7 /* raw_logging.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = raw_logging.cc; path = "../third-party/glog-0.3.5/src/raw_logging.cc"; sourceTree = "<group>"; };
-		139D7EDC1E25DBDC00323FB7 /* signalhandler.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = signalhandler.cc; path = "../third-party/glog-0.3.5/src/signalhandler.cc"; sourceTree = "<group>"; };
-		139D7EDD1E25DBDC00323FB7 /* stacktrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stacktrace.h; path = "../third-party/glog-0.3.5/src/stacktrace.h"; sourceTree = "<group>"; };
-		139D7EDE1E25DBDC00323FB7 /* symbolize.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = symbolize.cc; path = "../third-party/glog-0.3.5/src/symbolize.cc"; sourceTree = "<group>"; };
-		139D7EDF1E25DBDC00323FB7 /* symbolize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = symbolize.h; path = "../third-party/glog-0.3.5/src/symbolize.h"; sourceTree = "<group>"; };
-		139D7EE01E25DBDC00323FB7 /* utilities.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = utilities.cc; path = "../third-party/glog-0.3.5/src/utilities.cc"; sourceTree = "<group>"; };
-		139D7EE11E25DBDC00323FB7 /* utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = utilities.h; path = "../third-party/glog-0.3.5/src/utilities.h"; sourceTree = "<group>"; };
-		139D7EE21E25DBDC00323FB7 /* vlog_is_on.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vlog_is_on.cc; path = "../third-party/glog-0.3.5/src/vlog_is_on.cc"; sourceTree = "<group>"; };
-		139D7F081E25DE3700323FB7 /* demangle.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = demangle.cc; path = "../third-party/glog-0.3.5/src/demangle.cc"; sourceTree = "<group>"; };
-		139D7F111E25DEC900323FB7 /* log_severity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = log_severity.h; sourceTree = "<group>"; };
-		139D7F121E25DEC900323FB7 /* logging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = logging.h; sourceTree = "<group>"; };
-		139D7F141E25DEC900323FB7 /* raw_logging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = raw_logging.h; sourceTree = "<group>"; };
-		139D7F161E25DEC900323FB7 /* stl_logging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stl_logging.h; sourceTree = "<group>"; };
-		139D7F181E25DEC900323FB7 /* vlog_is_on.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vlog_is_on.h; sourceTree = "<group>"; };
-		139D849C1E273B5600323FB7 /* AtomicIntrusiveLinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AtomicIntrusiveLinkedList.h; path = "folly/AtomicIntrusiveLinkedList.h"; sourceTree = "<group>"; };
-		139D849D1E273B5600323FB7 /* Bits.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Bits.cpp; path = "folly/Bits.cpp"; sourceTree = "<group>"; };
-		139D849E1E273B5600323FB7 /* Bits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Bits.h; path = "folly/Bits.h"; sourceTree = "<group>"; };
-		139D849F1E273B5600323FB7 /* Conv.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Conv.cpp; path = "folly/Conv.cpp"; sourceTree = "<group>"; };
-		139D84A01E273B5600323FB7 /* Conv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Conv.h; path = "folly/Conv.h"; sourceTree = "<group>"; };
-		139D84A11E273B5600323FB7 /* dynamic-inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "dynamic-inl.h"; path = "folly/dynamic-inl.h"; sourceTree = "<group>"; };
-		139D84A21E273B5600323FB7 /* dynamic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = dynamic.cpp; path = "folly/dynamic.cpp"; sourceTree = "<group>"; };
-		139D84A31E273B5600323FB7 /* dynamic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dynamic.h; path = "folly/dynamic.h"; sourceTree = "<group>"; };
-		139D84A41E273B5600323FB7 /* Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Exception.h; path = "folly/Exception.h"; sourceTree = "<group>"; };
-		139D84A71E273B5600323FB7 /* json.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = json.cpp; path = "folly/json.cpp"; sourceTree = "<group>"; };
-		139D84A81E273B5600323FB7 /* json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = json.h; path = "folly/json.h"; sourceTree = "<group>"; };
-		139D84A91E273B5600323FB7 /* Memory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Memory.h; path = "folly/Memory.h"; sourceTree = "<group>"; };
-		139D84AA1E273B5600323FB7 /* MoveWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MoveWrapper.h; path = "folly/MoveWrapper.h"; sourceTree = "<group>"; };
-		139D84AB1E273B5600323FB7 /* Optional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Optional.h; path = "folly/Optional.h"; sourceTree = "<group>"; };
-		139D84AC1E273B5600323FB7 /* ScopeGuard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScopeGuard.h; path = "folly/ScopeGuard.h"; sourceTree = "<group>"; };
+		139D7ED81E25DBDC00323FB7 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = "../third-party/glog-0.3.5/src/config.h"; sourceTree = SOURCE_ROOT; };
+		139D7ED91E25DBDC00323FB7 /* demangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = demangle.h; path = "../third-party/glog-0.3.5/src/demangle.h"; sourceTree = SOURCE_ROOT; };
+		139D7EDA1E25DBDC00323FB7 /* logging.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = logging.cc; path = "../third-party/glog-0.3.5/src/logging.cc"; sourceTree = SOURCE_ROOT; };
+		139D7EDB1E25DBDC00323FB7 /* raw_logging.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = raw_logging.cc; path = "../third-party/glog-0.3.5/src/raw_logging.cc"; sourceTree = SOURCE_ROOT; };
+		139D7EDC1E25DBDC00323FB7 /* signalhandler.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = signalhandler.cc; path = "../third-party/glog-0.3.5/src/signalhandler.cc"; sourceTree = SOURCE_ROOT; };
+		139D7EDD1E25DBDC00323FB7 /* stacktrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stacktrace.h; path = "../third-party/glog-0.3.5/src/stacktrace.h"; sourceTree = SOURCE_ROOT; };
+		139D7EDE1E25DBDC00323FB7 /* symbolize.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = symbolize.cc; path = "../third-party/glog-0.3.5/src/symbolize.cc"; sourceTree = SOURCE_ROOT; };
+		139D7EDF1E25DBDC00323FB7 /* symbolize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = symbolize.h; path = "../third-party/glog-0.3.5/src/symbolize.h"; sourceTree = SOURCE_ROOT; };
+		139D7EE01E25DBDC00323FB7 /* utilities.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = utilities.cc; path = "../third-party/glog-0.3.5/src/utilities.cc"; sourceTree = SOURCE_ROOT; };
+		139D7EE11E25DBDC00323FB7 /* utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = utilities.h; path = "../third-party/glog-0.3.5/src/utilities.h"; sourceTree = SOURCE_ROOT; };
+		139D7EE21E25DBDC00323FB7 /* vlog_is_on.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vlog_is_on.cc; path = "../third-party/glog-0.3.5/src/vlog_is_on.cc"; sourceTree = SOURCE_ROOT; };
+		139D7F081E25DE3700323FB7 /* demangle.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = demangle.cc; path = "../third-party/glog-0.3.5/src/demangle.cc"; sourceTree = SOURCE_ROOT; };
+		139D7F111E25DEC900323FB7 /* log_severity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = log_severity.h; path = "../third-party/glog-0.3.5/src/glog/log_severity.h"; sourceTree = SOURCE_ROOT; };
+		139D7F121E25DEC900323FB7 /* logging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = logging.h; path = "../third-party/glog-0.3.5/src/glog/logging.h"; sourceTree = SOURCE_ROOT; };
+		139D7F141E25DEC900323FB7 /* raw_logging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = raw_logging.h; path = "../third-party/glog-0.3.5/src/glog/raw_logging.h"; sourceTree = SOURCE_ROOT; };
+		139D7F161E25DEC900323FB7 /* stl_logging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stl_logging.h; path = "../third-party/glog-0.3.5/src/glog/stl_logging.h"; sourceTree = SOURCE_ROOT; };
+		139D7F181E25DEC900323FB7 /* vlog_is_on.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vlog_is_on.h; path = "../third-party/glog-0.3.5/src/glog/vlog_is_on.h"; sourceTree = SOURCE_ROOT; };
+		139D849C1E273B5600323FB7 /* AtomicIntrusiveLinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AtomicIntrusiveLinkedList.h; path = "../third-party/folly-2016.10.31.00/folly/AtomicIntrusiveLinkedList.h"; sourceTree = SOURCE_ROOT; };
+		139D849D1E273B5600323FB7 /* Bits.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Bits.cpp; path = "../third-party/folly-2016.10.31.00/folly/Bits.cpp"; sourceTree = SOURCE_ROOT; };
+		139D849E1E273B5600323FB7 /* Bits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Bits.h; path = "../third-party/folly-2016.10.31.00/folly/Bits.h"; sourceTree = SOURCE_ROOT; };
+		139D849F1E273B5600323FB7 /* Conv.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Conv.cpp; path = "../third-party/folly-2016.10.31.00/folly/Conv.cpp"; sourceTree = SOURCE_ROOT; };
+		139D84A01E273B5600323FB7 /* Conv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Conv.h; path = "../third-party/folly-2016.10.31.00/folly/Conv.h"; sourceTree = SOURCE_ROOT; };
+		139D84A11E273B5600323FB7 /* dynamic-inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "dynamic-inl.h"; path = "../third-party/folly-2016.10.31.00/folly/dynamic-inl.h"; sourceTree = SOURCE_ROOT; };
+		139D84A21E273B5600323FB7 /* dynamic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = dynamic.cpp; path = "../third-party/folly-2016.10.31.00/folly/dynamic.cpp"; sourceTree = SOURCE_ROOT; };
+		139D84A31E273B5600323FB7 /* dynamic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dynamic.h; path = "../third-party/folly-2016.10.31.00/folly/dynamic.h"; sourceTree = SOURCE_ROOT; };
+		139D84A41E273B5600323FB7 /* Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Exception.h; path = "../third-party/folly-2016.10.31.00/folly/Exception.h"; sourceTree = SOURCE_ROOT; };
+		139D84A71E273B5600323FB7 /* json.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = json.cpp; path = "../third-party/folly-2016.10.31.00/folly/json.cpp"; sourceTree = SOURCE_ROOT; };
+		139D84A81E273B5600323FB7 /* json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = json.h; path = "../third-party/folly-2016.10.31.00/folly/json.h"; sourceTree = SOURCE_ROOT; };
+		139D84A91E273B5600323FB7 /* Memory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Memory.h; path = "../third-party/folly-2016.10.31.00/folly/Memory.h"; sourceTree = SOURCE_ROOT; };
+		139D84AA1E273B5600323FB7 /* MoveWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MoveWrapper.h; path = "../third-party/folly-2016.10.31.00/folly/MoveWrapper.h"; sourceTree = SOURCE_ROOT; };
+		139D84AB1E273B5600323FB7 /* Optional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Optional.h; path = "../third-party/folly-2016.10.31.00/folly/Optional.h"; sourceTree = SOURCE_ROOT; };
+		139D84AC1E273B5600323FB7 /* ScopeGuard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScopeGuard.h; path = "../third-party/folly-2016.10.31.00/folly/ScopeGuard.h"; sourceTree = SOURCE_ROOT; };
 		13A0C2851B74F71200B29F6F /* RCTDevLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = RCTDevLoadingView.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		13A0C2861B74F71200B29F6F /* RCTDevLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTDevLoadingView.m; sourceTree = "<group>"; };
 		13A0C2871B74F71200B29F6F /* RCTDevMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = RCTDevMenu.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
@@ -2037,11 +2041,11 @@
 		13E067541A70F44B002CDEE1 /* UIView+React.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+React.m"; sourceTree = "<group>"; };
 		13F17A831B8493E5007D4C75 /* RCTRedBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTRedBox.h; sourceTree = "<group>"; };
 		13F17A841B8493E5007D4C75 /* RCTRedBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTRedBox.m; sourceTree = "<group>"; };
-		13F887521E2971C500C3C7A1 /* Demangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Demangle.cpp; path = "folly/Demangle.cpp"; sourceTree = "<group>"; };
-		13F887531E2971C500C3C7A1 /* StringBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = StringBase.cpp; path = "folly/StringBase.cpp"; sourceTree = "<group>"; };
-		13F887541E2971C500C3C7A1 /* Unicode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Unicode.cpp; path = "folly/Unicode.cpp"; sourceTree = "<group>"; };
-		13F8879C1E29740700C3C7A1 /* BitsFunctexcept.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BitsFunctexcept.cpp; path = "folly/portability/BitsFunctexcept.cpp"; sourceTree = "<group>"; };
-		13F887A01E2977D800C3C7A1 /* MallocImpl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MallocImpl.cpp; path = "folly/detail/MallocImpl.cpp"; sourceTree = "<group>"; };
+		13F887521E2971C500C3C7A1 /* Demangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Demangle.cpp; path = "../third-party/folly-2016.10.31.00/folly/Demangle.cpp"; sourceTree = SOURCE_ROOT; };
+		13F887531E2971C500C3C7A1 /* StringBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = StringBase.cpp; path = "../third-party/folly-2016.10.31.00/folly/StringBase.cpp"; sourceTree = SOURCE_ROOT; };
+		13F887541E2971C500C3C7A1 /* Unicode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Unicode.cpp; path = "../third-party/folly-2016.10.31.00/folly/Unicode.cpp"; sourceTree = SOURCE_ROOT; };
+		13F8879C1E29740700C3C7A1 /* BitsFunctexcept.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BitsFunctexcept.cpp; path = "../third-party/folly-2016.10.31.00/folly/portability/BitsFunctexcept.cpp"; sourceTree = SOURCE_ROOT; };
+		13F887A01E2977D800C3C7A1 /* MallocImpl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MallocImpl.cpp; path = "../third-party/folly-2016.10.31.00/folly/detail/MallocImpl.cpp"; sourceTree = SOURCE_ROOT; };
 		14200DA81AC179B3008EE6BA /* RCTJavaScriptLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTJavaScriptLoader.h; sourceTree = "<group>"; };
 		142014171B32094000CC17BA /* RCTPerformanceLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTPerformanceLogger.m; sourceTree = "<group>"; };
 		142014181B32094000CC17BA /* RCTPerformanceLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTPerformanceLogger.h; sourceTree = "<group>"; };
@@ -2175,6 +2179,10 @@
 		3EDCA8A21D3591E700450C31 /* RCTErrorCustomizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTErrorCustomizer.h; sourceTree = "<group>"; };
 		3EDCA8A31D3591E700450C31 /* RCTErrorInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTErrorInfo.h; sourceTree = "<group>"; };
 		3EDCA8A41D3591E700450C31 /* RCTErrorInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTErrorInfo.m; sourceTree = "<group>"; };
+		50E98FE621460B0D00CD9289 /* RCTWKWebViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTWKWebViewManager.m; sourceTree = "<group>"; };
+		50E98FE721460B0D00CD9289 /* RCTWKWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTWKWebView.h; sourceTree = "<group>"; };
+		50E98FE821460B0D00CD9289 /* RCTWKWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTWKWebView.m; sourceTree = "<group>"; };
+		50E98FE921460B0D00CD9289 /* RCTWKWebViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTWKWebViewManager.h; sourceTree = "<group>"; };
 		5335D5401FE81A4700883D58 /* RCTShadowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTShadowView.m; sourceTree = "<group>"; };
 		5343895E203905B6008E0CB3 /* YGLayout.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = YGLayout.cpp; sourceTree = "<group>"; };
 		5343895F203905B6008E0CB3 /* YGLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGLayout.h; sourceTree = "<group>"; };
@@ -2575,6 +2583,10 @@
 		13B07FF31A6947C200A75B9A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				50E98FE721460B0D00CD9289 /* RCTWKWebView.h */,
+				50E98FE821460B0D00CD9289 /* RCTWKWebView.m */,
+				50E98FE921460B0D00CD9289 /* RCTWKWebViewManager.h */,
+				50E98FE621460B0D00CD9289 /* RCTWKWebViewManager.m */,
 				B95154301D1B34B200FE7B80 /* RCTActivityIndicatorView.h */,
 				B95154311D1B34B200FE7B80 /* RCTActivityIndicatorView.m */,
 				13B080181A69489C00A75B9A /* RCTActivityIndicatorViewManager.h */,
@@ -3501,6 +3513,7 @@
 				3D80DA2A1DF820620028D040 /* RCTErrorCustomizer.h in Headers */,
 				3D80DA2B1DF820620028D040 /* RCTErrorInfo.h in Headers */,
 				1384E2081E806D4E00545659 /* RCTNativeModule.h in Headers */,
+				50E98FED21460B0D00CD9289 /* RCTWKWebViewManager.h in Headers */,
 				3D7BFD2D1EA8E3FA008DFB7A /* RCTReconnectingWebSocket.h in Headers */,
 				3D80DA2C1DF820620028D040 /* RCTEventDispatcher.h in Headers */,
 				3D80DA2D1DF820620028D040 /* RCTFrameUpdate.h in Headers */,
@@ -3512,6 +3525,7 @@
 				9936F3381F5F2F480010BF04 /* PrivateDataBase.h in Headers */,
 				3D80DA301DF820620028D040 /* RCTJavaScriptExecutor.h in Headers */,
 				3DCE53281FEAB23100613583 /* RCTDatePicker.h in Headers */,
+				50E98FEB21460B0D00CD9289 /* RCTWKWebView.h in Headers */,
 				135A9BFF1E7B0EE600587AEB /* RCTJSCHelpers.h in Headers */,
 				3D80DA311DF820620028D040 /* RCTJavaScriptLoader.h in Headers */,
 				130E3D881E6A082100ACE484 /* RCTDevSettings.h in Headers */,
@@ -3984,17 +3998,12 @@
 				TargetAttributes = {
 					139D7E871E25C6D100323FB7 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = V9WTTPBFK9;
-						ProvisioningStyle = Automatic;
 					};
 					139D7ECD1E25DB7D00323FB7 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = V9WTTPBFK9;
-						ProvisioningStyle = Automatic;
 					};
 					2D2A28121D9B038B00D4039D = {
 						CreatedOnToolsVersion = 8.0;
-						ProvisioningStyle = Automatic;
 					};
 					83CBBA2D1A601D0E00E9B192 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -4047,7 +4056,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi";
+			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		142C4F7F1B582EA6001F0B58 /* Include RCTJSCProfiler */ = {
@@ -4071,13 +4080,69 @@
 			files = (
 			);
 			inputPaths = (
+				"../scripts/ios-install-third-party.sh",
 			);
 			name = "Install Third Party";
 			outputPaths = (
+				"../third-party/glog-0.3.5/src/config.h",
+				"../third-party/glog-0.3.5/src/demangle.cc",
+				"../third-party/glog-0.3.5/src/demangle.h",
+				"../third-party/glog-0.3.5/src/logging.cc",
+				"../third-party/glog-0.3.5/src/raw_logging.cc",
+				"../third-party/glog-0.3.5/src/signalhandler.cc",
+				"../third-party/glog-0.3.5/src/stacktrace.h",
+				"../third-party/glog-0.3.5/src/symbolize.cc",
+				"../third-party/glog-0.3.5/src/symbolize.h",
+				"../third-party/glog-0.3.5/src/utilities.cc",
+				"../third-party/glog-0.3.5/src/utilities.h",
+				"../third-party/glog-0.3.5/src/vlog_is_on.cc",
+				"../third-party/glog-0.3.5/src/glog/log_severity.h",
+				"../third-party/glog-0.3.5/src/glog/logging.h",
+				"../third-party/glog-0.3.5/src/glog/raw_logging.h",
+				"../third-party/glog-0.3.5/src/glog/stl_logging.h",
+				"../third-party/glog-0.3.5/src/glog/vlog_is_on.h",
+				"../third-party/folly-2016.10.31.00/folly/detail/MallocImpl.cpp",
+				"../third-party/folly-2016.10.31.00/folly/portability/BitsFunctexcept.cpp",
+				"../third-party/folly-2016.10.31.00/folly/Demangle.cpp",
+				"../third-party/folly-2016.10.31.00/folly/StringBase.cpp",
+				"../third-party/folly-2016.10.31.00/folly/Unicode.cpp",
+				"../third-party/folly-2016.10.31.00/folly/AtomicIntrusiveLinkedList.h",
+				"../third-party/folly-2016.10.31.00/folly/Bits.cpp",
+				"../third-party/folly-2016.10.31.00/folly/Bits.h",
+				"../third-party/folly-2016.10.31.00/folly/Conv.cpp",
+				"../third-party/folly-2016.10.31.00/folly/Conv.h",
+				"../third-party/folly-2016.10.31.00/folly/dynamic-inl.h",
+				"../third-party/folly-2016.10.31.00/folly/dynamic.cpp",
+				"../third-party/folly-2016.10.31.00/folly/dynamic.h",
+				"../third-party/folly-2016.10.31.00/folly/Exception.h",
+				"../third-party/folly-2016.10.31.00/folly/json.cpp",
+				"../third-party/folly-2016.10.31.00/folly/json.h",
+				"../third-party/folly-2016.10.31.00/folly/Memory.h",
+				"../third-party/folly-2016.10.31.00/folly/MoveWrapper.h",
+				"../third-party/folly-2016.10.31.00/folly/Optional.h",
+				"../third-party/folly-2016.10.31.00/folly/ScopeGuard.h",
+				"../third-party/double-conversion-1.1.6/src/bignum-dtoa.cc",
+				"../third-party/double-conversion-1.1.6/src/bignum-dtoa.h",
+				"../third-party/double-conversion-1.1.6/src/bignum.cc",
+				"../third-party/double-conversion-1.1.6/src/bignum.h",
+				"../third-party/double-conversion-1.1.6/src/cached-powers.cc",
+				"../third-party/double-conversion-1.1.6/src/cached-powers.h",
+				"../third-party/double-conversion-1.1.6/src/diy-fp.cc",
+				"../third-party/double-conversion-1.1.6/src/diy-fp.h",
+				"../third-party/double-conversion-1.1.6/src/double-conversion.cc",
+				"../third-party/double-conversion-1.1.6/src/double-conversion.h",
+				"../third-party/double-conversion-1.1.6/src/fast-dtoa.cc",
+				"../third-party/double-conversion-1.1.6/src/fast-dtoa.h",
+				"../third-party/double-conversion-1.1.6/src/fixed-dtoa.cc",
+				"../third-party/double-conversion-1.1.6/src/fixed-dtoa.h",
+				"../third-party/double-conversion-1.1.6/src/ieee.h",
+				"../third-party/double-conversion-1.1.6/src/strtod.cc",
+				"../third-party/double-conversion-1.1.6/src/strtod.h",
+				"../third-party/double-conversion-1.1.6/src/utils.h",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cd \"$SRCROOT/..\"\nexec ./scripts/ios-install-third-party.sh";
+			shellScript = "cd \"$SRCROOT/..\"\nexec ./scripts/ios-install-third-party.sh\n";
 		};
 		2D6948201DA3042200B3FA97 /* Include RCTJSCProfiler */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -4483,6 +4548,7 @@
 				13CC8A821B17642100940AE7 /* RCTBorderDrawing.m in Sources */,
 				C60128AD1F3D1258009DF9FF /* RCTCxxConvert.m in Sources */,
 				3DCE53291FEAB23100613583 /* RCTDatePicker.m in Sources */,
+				50E98FEA21460B0D00CD9289 /* RCTWKWebViewManager.m in Sources */,
 				83CBBA511A601E3B00E9B192 /* RCTAssert.m in Sources */,
 				59EB6DBD1EBD6FC90072A5E7 /* RCTUIManagerObserverCoordinator.mm in Sources */,
 				59E604A21FE9CCE300BD90C5 /* RCTScrollContentViewManager.m in Sources */,
@@ -4567,6 +4633,7 @@
 				3DCE532B1FEAB23100613583 /* RCTDatePickerManager.m in Sources */,
 				13C156051AB1A2840079392D /* RCTWebView.m in Sources */,
 				83CBBA601A601EAA00E9B192 /* RCTBridge.m in Sources */,
+				50E98FEC21460B0D00CD9289 /* RCTWKWebView.m in Sources */,
 				590D7BFF1EBD458B00D8A370 /* RCTShadowView+Layout.m in Sources */,
 				5335D5411FE81A4700883D58 /* RCTShadowView.m in Sources */,
 				66CD94B31F1045E700CB3C7C /* RCTMaskedView.m in Sources */,
@@ -4730,7 +4797,6 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = V9WTTPBFK9;
 				OTHER_LDFLAGS = "-ObjC";
 				PRIVATE_HEADERS_FOLDER_PATH = "/usr/local/include/double-conversion";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -4747,7 +4813,6 @@
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = V9WTTPBFK9;
 				OTHER_LDFLAGS = "-ObjC";
 				PRIVATE_HEADERS_FOLDER_PATH = "/usr/local/include/double-conversion";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -4764,7 +4829,6 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = V9WTTPBFK9;
 				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -4783,7 +4847,6 @@
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = V9WTTPBFK9;
 				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -4839,7 +4902,6 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = V9WTTPBFK9;
 				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "third-party";
@@ -4859,7 +4921,6 @@
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = V9WTTPBFK9;
 				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "third-party";
@@ -4877,7 +4938,6 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = V9WTTPBFK9;
 				OTHER_LDFLAGS = "-ObjC";
 				PRIVATE_HEADERS_FOLDER_PATH = "/usr/local/include/double-conversion";
 				PRODUCT_NAME = "double-conversion";
@@ -4895,7 +4955,6 @@
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = V9WTTPBFK9;
 				OTHER_LDFLAGS = "-ObjC";
 				PRIVATE_HEADERS_FOLDER_PATH = "/usr/local/include/double-conversion";
 				PRODUCT_NAME = "double-conversion";

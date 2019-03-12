@@ -14,11 +14,13 @@ const getPolyfills = require('../../rn-get-polyfills');
 const path = require('path');
 
 const {createBlacklist} = require('metro');
+/* $FlowFixMe(site=react_native_oss) */
 const {loadConfig} = require('metro-config');
 
 /**
  * Configuration file of the CLI.
  */
+/* $FlowFixMe(site=react_native_oss) */
 import type {ConfigT} from 'metro-config/src/configTypes.flow';
 
 function getProjectRoot() {
@@ -75,6 +77,9 @@ const Config = {
         require.resolve('../../Libraries/Core/InitializeCore'),
       ],
       getPolyfills,
+    },
+    server: {
+      port: process.env.RCT_METRO_PORT || 8081,
     },
     transformer: {
       babelTransformerPath: require.resolve('metro/src/reactNativeTransformer'),
