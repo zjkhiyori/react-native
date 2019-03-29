@@ -25,6 +25,11 @@ import com.facebook.react.modules.core.DeviceEventManagerModule.RCTDeviceEventEm
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.Charset;
+import java.security.KeyManagementException;
+import java.security.NoSuchAlgorithmException;
+import java.security.SecureRandom;
+import java.security.cert.CertificateException;
+import java.security.cert.X509Certificate;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -32,6 +37,11 @@ import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import javax.annotation.Nullable;
+import javax.net.ssl.HostnameVerifier;
+import javax.net.ssl.SSLContext;
+import javax.net.ssl.SSLSession;
+import javax.net.ssl.TrustManager;
+import javax.net.ssl.X509TrustManager;
 
 import okhttp3.Call;
 import okhttp3.Callback;
@@ -136,6 +146,12 @@ public final class NetworkingModule extends ReactContextBaseJavaModule {
       }
       client = clientBuilder.build();
     }
+    client = client.newBuilder().hostnameVerifier(new HostnameVerifier() {
+      @Override
+      public boolean verify(String s, SSLSession sslSession) {
+        return true;
+      }
+    }).sslSocketFactory(getSSLContext().getSocketFactory()).build();
     mClient = client;
     mCookieHandler = new ForwardingCookieHandler(reactContext);
     mCookieJarContainer = (CookieJarContainer) mClient.cookieJar();
@@ -206,6 +222,36 @@ public final class NetworkingModule extends ReactContextBaseJavaModule {
     mResponseHandlers.clear();
     mUriHandlers.clear();
   }
+
+  private SSLContext getSSLContext() {
+    X509TrustManager x509TrustManager = new X509TrustManager() {
+      @Override
+      public void checkClientTrusted(X509Certificate[] x509Certificates, String s) throws CertificateException {
+
+      }
+
+      @Override
+      public void checkServerTrusted(X509Certificate[] x509Certificates, String s) throws CertificateException {
+
+      }
+
+      @Override
+      public X509Certificate[] getAcceptedIssuers() {
+        return new X509Certificate[0];
+      }
+    };
+    SSLContext sslContext = null;
+    try {
+      sslContext = SSLContext.getInstance("SSL");
+      sslContext.init(null, new TrustManager[]{x509TrustManager}, new SecureRandom());
+    } catch (NoSuchAlgorithmException e) {
+      e.printStackTrace();
+    } catch (KeyManagementException e) {
+      e.printStackTrace();
+    }
+    return sslContext;
+  }
+
 
   public void addUriHandler(UriHandler handler) {
     mUriHandlers.add(handler);
